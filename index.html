@@ -17,7 +17,10 @@
   </head>
   <body>
     <ul id="messages"></ul>
-    <form id="form" action="#">
+    <script>
+      function prevent() {};
+    </script>
+    <form id="form" action="" onsubmit="prevent();return false">
       <input id="input" autocomplete="off" /><button>Send</button>
     </form>
     <script src="/socket.io/socket.io.js"></script>
